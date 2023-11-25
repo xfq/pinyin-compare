@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>拼音排序工具</title>
+    <link href="style/style.css" rel="stylesheet">
+    <meta name="keywords" content="文字排序">
+    <meta name="description" content="拼音排序工具用于对一段文字按拼音排序。">
+    <script src="script/main.js"></script>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="title"><h1>拼音排序工具</h1></div>
+          <textarea id="text" name="text" class="textarea" spellcheck="false"></textarea>
+          <div class="buttons">
+          <!-- <select id="paixu"> 
+          <optgroup label="文字排序">
+            <option value="py0">按拼音正序</option> 
+            <option value="py1">按拼音逆序</option> 
+          </optgroup>
+          </select> -->
+          <span style="display: inline-block;">
+          <input type="button" value="执行" onclick="sort()">
+          <input type="button" value="全选" onclick="text.select()">
+          <input type="button" value="清空" onclick="text.value='';text.focus()"></span></div>
+          <div id="show"></div>
+
+      </div>
+
+    <!-- <script defer src="script/main.js"></script> -->
+</body>
+
+</html>
