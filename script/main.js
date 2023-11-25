@@ -5,9 +5,11 @@ function sort() {
 
   let linesArray = textareaValue.split("\n");
 
-  let resultArray = linesArray.sort(function compareFunction(param1, param2) {
-    return param1.localeCompare(param2, "zh");
-  });
+  // let resultArray = linesArray.sort(function compareFunction(param1, param2) {
+  //   return param1.localeCompare(param2, "zh");
+  // });
+
+  let resultArray = linesArray.sort(new Intl.Collator('zh').compare);
 
   let resultString = resultArray.join('<br>');
 
